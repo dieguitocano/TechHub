@@ -1,0 +1,44 @@
+:root {
+ --padding-mobile: 20px;
+ --padding-tablet: 50px;
+ --padding-desktop: 100px;
+ --primary-color: ;
+ --secondary-color: ;
+ --border-color: #9996;
+ --background-color1: #f8f7f2;
+ --color-primary-text: black;
+ --color-secondary-color: #9996;
+ --color-special-items: #f85555;
+ --background-color: #dedede;
+}
+
+/*------------ Reset ----------*/
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #dedede;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;   
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
