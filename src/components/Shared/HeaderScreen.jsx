@@ -27,10 +27,10 @@ const HeaderScreen = () => {
             <nav ref={navbar} className="navbar">
                 <ul className='navbar-list'>
                     <li className='navbar-items'>
-                        <NavLink 
-                        to='/login' 
-                        className={({isActive}) => isActive ? 'navbar-link-active navbar-links' : 
-                        "navbar-links"}>
+                        <NavLink
+                            to='/login'
+                            className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
+                                "navbar-links"}>
                             <span className="material-symbols-outlined">
                                 person
                             </span>
@@ -38,24 +38,24 @@ const HeaderScreen = () => {
                         </NavLink>
                     </li>
                     <li className='navbar-items'>
-                        <NavLink to='/purchases' 
-                        className={({isActive}) => isActive ? 'navbar-link-active navbar-links' : 
-                        "navbar-links"}>
-                        <span className="material-symbols-outlined">
-                            local_mall
-                        </span>
-                        <p className='navbar-label'></p>
-                    </NavLink>
+                        <NavLink to='/purchases'
+                            className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
+                                "navbar-links"}>
+                            <span className="material-symbols-outlined">
+                                local_mall
+                            </span>
+                            <p className='navbar-label'></p>
+                        </NavLink>
                     </li>
                     <li className='navbar-items'>
-                        <NavLink to='/cart' 
-                        className={({isActive}) => isActive ? 'navbar-link-active navbar-links' : 
-                        "navbar-links"}>
-                        <span className="material-symbols-outlined">
-                            shopping_cart_checkout
-                        </span>
-                        <p className='navbar-label'></p>
-                    </NavLink>
+                        <NavLink to='/cart'
+                            className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
+                                "navbar-links"}>
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                            <p className='navbar-label'></p>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

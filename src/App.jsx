@@ -7,6 +7,7 @@ import ProtectedRoutes from './components/ProtectedRoutes'
 import CartScreen from './components/Cart/CartScreen'
 import PurchasesScreen from "./components/Purchases/PurchasesScreen"
 import HeaderScreen from './components/Shared/HeaderScreen'
+import ProductScreen from './components/Products/ProductScreen'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
 
     <div className="App">
+      
       <HeaderScreen />
       <Routes>
         <Route path='/' element={<HomeScreen />} />
@@ -22,6 +24,7 @@ function App() {
           <Route path='/cart' element={<CartScreen />} />
           <Route path='/purchases' element={<PurchasesScreen />}/>
         </Route>
+        <Route path='/products/:id' element={<ProductScreen />}/>
       </Routes>
     </div>
   )
