@@ -48,6 +48,7 @@ const ProductScreen = () => {
 
 
     return (
+        
         <div className='product'>
             <div className='slider'>
                 <div onClick={clickPrev} className='slider-prev'><span className="material-symbols-outlined">

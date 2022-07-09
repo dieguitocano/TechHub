@@ -24,6 +24,7 @@ const HomeScreen = () => {
   }, [])
 
   return (
+    
     <div className='home'>
       <InputSearch setProductSearch={setProductSearch}/>
       <div className='products-container'>

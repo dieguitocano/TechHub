@@ -22,6 +22,7 @@ const ProductCard = ({product}) => {
                     <h3 className='card-product-price-label'>Price</h3>
                     <p className='card-product-price-number'>$ {product.price}</p>
                 </div>
+                
                 <button className='card-product-btn'>
                     <span className="material-symbols-outlined">
                         shopping_cart
