@@ -8,7 +8,10 @@
 }
 
 .login-form {
-    width: max-content;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    width: min(100%, 500px);
+    height: 300px;
     box-shadow: 0 0 20px #0005;
     padding: 20px;
     border-radius: 10px;
@@ -50,7 +53,7 @@
 }
 
 .login-input {
-    background-color: var(--background-color);
+    background-color: var( --background-color1);
     border-color: var(--color-secondary-color);
     margin-left: 8px;
     outline: none;

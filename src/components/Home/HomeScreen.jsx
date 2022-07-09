@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../../store/slices/products.slice'
+import Footer from '../Shared/Footer'
 import InputSearch from './InputSearch'
 import ProductCard from './ProductCard'
 import './style/homeScreen.css'
@@ -36,6 +37,7 @@ const HomeScreen = () => {
         }
 
       </div>
+      <Footer />
     </div>
   )
 }

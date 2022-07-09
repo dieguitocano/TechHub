@@ -1,0 +1,7 @@
+.footer {
+    padding: var(--padding-mobile);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}

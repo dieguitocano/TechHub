@@ -1,10 +1,11 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import ProductInfoId from './ProductInfoId'
 import './style/productScreen.css'
 
 
-const classImg = ['', 'second img', 'third-img']
+const classImg = ['', 'second-img', 'third-img']
 
 const ProductScreen = () => {
 
@@ -67,12 +68,26 @@ const ProductScreen = () => {
                 <div onClick={clickNext} className='slider-next'><span className="material-symbols-outlined">
                     arrow_forward_ios
                 </span></div>
-            <div className='puntitos-container'> 
-                <div onClick={() => setIndexClass(0)} className={indexClass == 0 ? 'puntitos puntitos-active' : 'puntitos'}> </div>
-                <div onClick={() => setIndexClass(1)} className={indexClass == 1 ? 'puntitos puntitos-active' : 'puntitos'}> </div>
-                <div onClick={() => setIndexClass(2)} className={indexClass == 2 ? 'puntitos puntitos-active' : 'puntitos'}> </div>
+                <div className='puntitos-container'>
+                    <div
+                        onClick={() => setIndexClass(0)}
+                        className={indexClass == 0 ?
+                            'puntitos puntitos-active' : 'puntitos'}>
+                    </div>
+                    <div
+                        onClick={() => setIndexClass(1)}
+                        className={indexClass == 1 ?
+                            'puntitos puntitos-active' : 'puntitos'}>
+                    </div>
+                    <div
+                        onClick={() => setIndexClass(2)}
+                        className={indexClass == 2 ?
+                            'puntitos puntitos-active' : 'puntitos'}>
+                    </div>
+                </div>
             </div>
-            </div>
+
+            <ProductInfoId product={product}/>
 
         </div >
     )

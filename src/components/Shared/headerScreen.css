@@ -14,30 +14,39 @@
 
 .header-menu-ham {
     position: relative;
-    z-index: 2;
     cursor: pointer;
     color: white;
+    z-index: 4;
+
+}
+
+.header-menu-ham-active {
+    
 
 }
 
 
 .navbar {
-    width: min(100%, 300px);
+    width: min(100%, 75%);
     position: fixed;
-    background-color: #dedede;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
     height: 100vh;
     right: 0;
     top: 0;
     padding-top: 80px;
-    box-shadow: 0 0 20px 0 var(--color-secondary-color);
+    
     transition: transform 600ms ease;
     transform: translateX(105%);
+    z-index: 3;
     
 }
 
 .navbar-open {
     transition: transform 600ms ease;
     transform: translateX(0);
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-list {
