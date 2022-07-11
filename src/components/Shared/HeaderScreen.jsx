@@ -9,6 +9,7 @@ const HeaderScreen = () => {
     const cart = useRef()
 
     console.log(navbar)
+    
     console.log(cart)
 
     const clickMenuHam = () => {

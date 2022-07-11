@@ -28,6 +28,7 @@ const ProductInfoId = ({ product }) => {
             })
             .catch(err => console.log(err.data))
     }
+    
 
     const minusOne = () => {
         const minus = counter - 1
