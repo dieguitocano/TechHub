@@ -59,7 +59,7 @@ const HeaderScreen = () => {
                         <NavLink to='/cart'
                             className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
                                 "navbar-links"}>
-                            <span onClick={clickCart} className="material-symbols-outlined cart">
+                            <span className="material-symbols-outlined ">
                                 shopping_cart
                             </span>
                             <p className='navbar-label'></p>
