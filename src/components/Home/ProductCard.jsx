@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
     
 
     const addCartProduct = () => {
-       g
+       
         const URL_CART = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
 
 
