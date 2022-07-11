@@ -6,9 +6,7 @@ const InputSearch = ({setProductSearch}) => {
 
     const { handleSubmit, register, reset } = useForm()
 
-    const changeInputText = e => {
-        setProductSearch(e.target.value)
-    }
+   
 
     const submit = data => {
         console.log(data)
@@ -18,7 +16,7 @@ const InputSearch = ({setProductSearch}) => {
 
     return (
         <div className='form-container'>
-        <form className='' onSubmit={handleSubmit(submit)} className='form-home'>
+        <form className='form-home' onSubmit={handleSubmit(submit)} >
             <input className='main-input' type="text" {...register('searchText')} />
             <button className='main-btn'>search</button>
         </form>

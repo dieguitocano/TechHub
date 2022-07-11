@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getAllProducts } from '../../store/slices/products.slice'
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import Footer from '../Shared/Footer'
 import InputSearch from './InputSearch'
 import ProductCard from './ProductCard'
@@ -9,7 +8,7 @@ import './style/homeScreen.css'
 
 const HomeScreen = () => {
 
-  const dispatch = useDispatch()
+  
 
   const products = useSelector(state => state.products)
 
@@ -18,15 +17,10 @@ const HomeScreen = () => {
 
   console.log(products)
 
-  useEffect(() => {
-    dispatch(getAllProducts())
-
-  }, [])
-
+ 
   return (
-    
     <div className='home'>
-      <InputSearch setProductSearch={setProductSearch}/>
+      <InputSearch setProductSearch={setProductSearch} />
       <div className='products-container'>
         {
           products.map(product => (
@@ -34,7 +28,7 @@ const HomeScreen = () => {
               key={product.id}
               product={product}
             />
-            ))
+          ))
         }
 
       </div>

@@ -40,10 +40,10 @@ const Form = () => {
         <form onSubmit={handleSubmit(submit)} className='login-form'>
             <ul className='login-test'>
                 <li className='flex-login'>
-                    <b>Email:</b>mason@gmail.com
+                    <b>Email:</b>jdoe@gmail.com
                 </li>
                 <li className='flex-login'>
-                    <b>Password:</b>mason1234
+                    <b>Password:</b>pass1234
                 </li>
             </ul>
             <h2 className='login-title'>Hub Access</h2>

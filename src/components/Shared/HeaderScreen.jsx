@@ -51,7 +51,7 @@ const HeaderScreen = () => {
                         <NavLink to='/cart'
                             className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
                                 "navbar-links"}>
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                                 shopping_cart
                             </span>
                             <p className='navbar-label'></p>

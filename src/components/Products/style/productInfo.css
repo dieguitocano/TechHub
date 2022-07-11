@@ -1,5 +1,31 @@
 .product-info-card {
     color: white;
     background: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    text-align: center;
+    /* width: min(100%, 550px);*/
+    width: 700px;
+    border-radius: 10px;
+
+}
+
+.product-info-button {
+    width: 40%;
+    height: 50px;
+    right: 20px;
+    bottom: 21px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-special-items);
+    cursor: pointer;
+    -webkit-transition-duration: 0, 4 s;
+    transition-duration: 0, 4 s;
+    aspect-ratio: 1;
+
+}
+
+.product-info-button:active {
+    transform: translateY(0.7px);
+    box-shadow: 0 0.8px #666;
 
 }
