@@ -1,15 +1,22 @@
 import React, { useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './headerScreen.css'
+import '../Cart/style/cartInfo.css'
 
 const HeaderScreen = () => {
 
     const navbar = useRef()
+    const cart = useRef()
 
     console.log(navbar)
+    console.log(cart)
 
     const clickMenuHam = () => {
         navbar.current.classList.toggle('navbar-open')
+    }
+
+    const clickCart = () => {
+        cart.current.classList.toggle('cart-open')
     }
 
 
@@ -51,7 +58,7 @@ const HeaderScreen = () => {
                         <NavLink to='/cart'
                             className={({ isActive }) => isActive ? 'navbar-link-active navbar-links' :
                                 "navbar-links"}>
-                            <span className="material-symbols-outlined">
+                            <span onClick={clickCart} className="material-symbols-outlined cart">
                                 shopping_cart
                             </span>
                             <p className='navbar-label'></p>

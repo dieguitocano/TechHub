@@ -1,0 +1,17 @@
+.cart-open {
+    transform: translateX(0);
+    transition-duration: 0ms;
+}
+.cart {
+    transform: translateX(0);
+    transition-duration: 0ms;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: initial;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    width: 40%;
+
+}

@@ -1,10 +1,11 @@
-import React from 'react'
-
+import React, { useRef } from 'react'
+import './style/cartInfo.css'
 const CartInfo = ({productCart}) => {
+  const cart = useRef()
 
 
   return (
-   <section>
+   <section  className='cart' ref={cart}>
     <h4>{productCart.brand}</h4>
    <h2>{productCart.title}</h2>
    <p>{productCart?.productsIncart?.quantity}</p>
